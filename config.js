@@ -157,7 +157,7 @@ const PRELOADER_COLOR = '#2e592c'; // Cor principal do preloader
  */
 
 // Habilitar/Desabilitar sistema de tradução
-const TRADUCAO = true;
+const TRADUCAO = false;
 
 // Idiomas disponíveis (primeiro da lista = idioma padrão)
 const LANGS = ['pt', 'en', 'es', 'fr'];
