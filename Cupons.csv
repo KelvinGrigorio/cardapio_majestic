@@ -1,0 +1,7 @@
+codigo_cupom,tipo_desconto,valor_desconto,data_inicio,data_fim
+CAFE10,produtos,10%,20/07/2025,25/07/2026
+TOTAL5,total,5,20/07/2025,25/07/2026
+FRETEGRATIS,frete,100%,20/07/2025,25/07/2026
+OFERTA20,produtos,20%,20/07/2025,25/07/2026
+ENTREGA50,frete,50%,20/07/2025,25/07/2026
+OFERTA30R,total,30,20/07/2025,26/07/2025

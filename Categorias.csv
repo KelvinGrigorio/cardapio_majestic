@@ -1,0 +1,20 @@
+nome_categoria,titulo_exibicao,descricao,ordem,status
+bebidas_com_cafe,☕ Cafés Especiais,Grãos especiais preparados artesanalmente,1,Ativo
+bebidas_geladas,🧊 Frappés ,Bebidas geladas cremosas e refrescantes,2,Ativo
+chocolates,🍫 Chocolates ,Sabor intenso e amanteigado,3,Ativo
+sobremesas,🧁 Sobremesas Artesanais,Doces caseiros com ingredientes premium,4,Ativo
+salgados,🥐 Salgados & Lanches,Opções salgadas frescas e variadas,5,Ativo
+cafes,Cafés,,6,Ativo
+chas,Chás,,7,Ativo
+coll_drinks,Coll Drinks,,8,Ativo
+fornearia_majestic,Fornearia Majestic,,9,Ativo
+minimos,Minimo's,,10,Ativo
+classicos,Clássicos,,11,Ativo
+toasts,Toasts,,12,Ativo
+natural_select,Natural Select,,13,Ativo
+sucos,Sucos,"Refrescante e cheio de sabor, feito com polpa 100% natural. Experimente os nossos sabores vibrantes.",14,Ativo
+smoothies,Smoothies,"Uma combinação perfeita de frutas selecionadas com leite e gelo, batidas até alcançar uma textura cremosa e refrescante. Escolha seu sabor favorito.",15,Ativo
+seets,Sweets,,16,Ativo
+pancakes,Pancakes,"Trio de panquecas americanas, macias e douradas, servidas quentinhas e prontas para receber sua cobertura preferida. Um convite ao simples, doce e irrestível.",17,Ativo
+waffles,Waffles,Um super clássico americano com crocância por fora e maciez por dentro. Pronto para receber sua cobertura preferida. Experimente também a versão de pão de queijo.,18,Ativo
+loja_do_cafe,Loja do Café,,19,Ativo

@@ -1,0 +1,43 @@
+section,key,value
+identidade_visual,nome_empresa,Majestic Coffee
+identidade_visual,slogan,Comece o seu dia com Majestade
+identidade_visual,logo_url,https://drive.google.com/file/d/1B-wxRTKIX8vIrZDZLqMSKlNy4vfaWSzw/view?usp=drive_link
+identidade_visual,favicon_url,https://drive.google.com/file/d/1e_g89qxZm0GQ-hvR63m__A3k-b_T_Pj4/view?usp=drive_link
+cores,cor_primaria,#2E7D32
+cores,cor_secundaria,#FFFFFF
+cores,cor_terciaria,#000000
+cores,cor_fundo,#B0BEC5
+cores,cor_texto,#212121
+cores,cor_texto_secundario,#616161
+cores,cor_primaria_escura,#1D5E20
+cores,cor_secundaria_escura,#4F7D4E
+cores,cor_terciaria_escura,#455A64
+contato,endereco_completo,"Manuel antunes pereira, 1157 - Mandaguari - PR"
+contato,telefone,(44) 99994-1187
+contato,whatsapp,5544999941187
+contato,email,
+redes_sociais,instagram_url,https://www.instagram.com/majestic.coffee_/
+redes_sociais,facebook_url,https://
+redes_sociais,google_negocio_url,
+seo,titulo_pagina,Majestic Coffee e Moments
+seo,descricao_seo,"Cafeteria especializada em cafés artesanais, salgados e doces caseiros."
+seo,palavras_chave,"café, cafeteria, doces, salgados, mandaguari, jandaia do sul, marialva"
+checkout,step2_opc1,Sim / Consumo no Local/ Seu pedido será entregue à mesa
+checkout,step2_opc2,Sim / Retirada no Local / Retire seu pedido no balcão
+checkout,step2_opc3,Sim / Delivery / Entregamos em seu endereço
+checkout,step2_opc4,Sim / Entrega Padrão / Consulte formas de entrega com o vendedor
+checkout,step2_taxa_delivery,Pergunte ao Atendente via WhatsApp
+checkout,step3_show_formas_pag,Sim
+checkout,step3_formas_pag,"Pix, Dinheiro, Cartão de Crédito, Cartão de Débito"
+checkout,step3_chave_pix,
+checkout,step3_mesa_comanda,Não
+checkout,step1_itens_obs,Sim
+checkout,orders_all_time,Sim
+checkout,valor_pedido_minimo,20
+checkout,only_bairro_mode,Não
+checkout,checkout_mode,Não
+checkout,checkout_currency,BRL
+envio,whatsapp_web,Sim
+envio,webhook_url,https://#
+setup,autor_name,Kelvin Cristian
+setup,autor_link,https://www.instagram.com/kelvincristian.ia/
