@@ -42,22 +42,22 @@
 // const COUPONS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSspyfIKlBhjqicB-DkRg4OZL0HsPSJ7wYEeoZ4PTerzDAP4U-O42uiiKZfEQA1l5KAcoN6Qsof/pubhtml?gid=1144201431&single=true';
 
 
-const MENU_CSV_URL = 'itens.csv'
+const MENU_CSV_URL = 'Itens.csv'
 
 
-const CATEGORIES_CSV_URL = 'categorias.csv'
+const CATEGORIES_CSV_URL = 'Categorias.csv'
 
 
-const CONFIG_CSV_URL = 'config.csv'
+const CONFIG_CSV_URL = 'Config.csv'
 
 
-const HOURS_CSV_URL = 'horarios.csv'
+const HOURS_CSV_URL = 'Horarios.csv'
 
 
-const NEIGHBORHOODS_CSV_URL = 'bairros.csv'
+const NEIGHBORHOODS_CSV_URL = 'Bairros.csv'
 
 
-const COUPONS_CSV_URL = 'cupons.csv'
+const COUPONS_CSV_URL = 'Cupons.csv'
 
 
 // ====================================================================
