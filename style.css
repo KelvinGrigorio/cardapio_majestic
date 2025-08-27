@@ -9,7 +9,16 @@
 }
 
 #search {
-    border-radius: 15px !important;
+    border-radius: 12px !important;
 }
 
+
+#h2 {
+    font-family: "Source Serif 4", serif !important;
+    font-size: 20px !important;
+}
+
+#category-item {
+    border-radius: 12px !important;
+}
 ;
