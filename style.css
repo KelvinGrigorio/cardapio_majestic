@@ -1,11 +1,11 @@
 #header-company-name {
     font-family: "Playfair Display", "cinzel" !important;
-    font-size: 24px;
+    font-size: 28px !important;
 }
 
 #header-slogan {
     font-family: "Source Serif 4", serif !important;
-    font-size: 16px;
+    font-size: 20px !important;
 }
 
 #search {
@@ -18,7 +18,8 @@
     font-size: 20px !important;
 }
 
-#category-item {
-    border-radius: 12px !important;
+#button.category-item {
+    border-radius: 2px !important;
 }
+
 ;
