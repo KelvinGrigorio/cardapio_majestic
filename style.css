@@ -5,7 +5,9 @@
 
 #header-slogan {
     font-family: "Source Serif 4", serif !important;
-    font-size: 26px !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    margin-bottom: 15px !important;
 }
 
 #search {
@@ -13,12 +15,13 @@
 }
 
 
-#h2 {
+#text-xl {
     font-family: "Source Serif 4", serif !important;
     font-size: 20px !important;
+    color: aliceblue !important;
 }
 
-#search-button {
+.category-item {
     border-radius: 2px !important;
 }
 
