@@ -31,9 +31,12 @@
 
 }
 
-.text-sm {
+.text-gray-600 {
     color: aliceblue !important;
     font-weight: bold !important;
 }
 
+.p-1 {
+    color: aliceblue !important:
+}
 ;
