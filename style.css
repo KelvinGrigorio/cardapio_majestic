@@ -3,6 +3,12 @@
     font-size: 32px !important;
 }
 
+#footer-company-name {
+    color: aliceblue !important;
+    font-family: "Playfair Display", "cinzel" !important;
+    font-size: 28px !important;
+}
+
 #header-slogan {
     font-family: "Source Serif 4", serif !important;
     font-size: 24px !important;
@@ -38,5 +44,9 @@
 
 .p-1 {
     color: aliceblue !important:
+}
+
+#footer-credits {
+    color: aliceblue !important;
 }
 ;
