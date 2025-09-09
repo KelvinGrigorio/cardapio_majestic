@@ -19,6 +19,7 @@
     font-family: "Source Serif 4", serif !important;
     font-size: 25px !important;
     color: aliceblue !important;
+    background-color:#2E592C !important;
 }
 
 .category-item {
@@ -28,6 +29,11 @@
 .max-w-4xl {
     padding: 12px 13px !important;
 
+}
+
+.text-sm {
+    color: aliceblue !important;
+    font-weight: bold !important;
 }
 
 ;
