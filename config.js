@@ -1,6 +1,6 @@
 /**
  * ====================================================================
- * CONFIGURAÇÃO DO CARDÁPIO SHEETS - V4.0.1 - 09/08/2025 - 21h30
+ * CONFIGURAÇÃO DO CARDÁPIO SHEETS - V4.0.6 - 28/09/2025 - 22h00
  * ====================================================================
  * 
  * Este arquivo contém todas as configurações principais do sistema,
@@ -43,22 +43,7 @@ const COUPONS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSs
 
 
 
-// const MENU_CSV_URL = 'Itens.csv';
 
-
-// const CATEGORIES_CSV_URL = 'Categorias.csv';
-
-
-// const CONFIG_CSV_URL = 'Config.csv';
-
-
-// const HOURS_CSV_URL = 'Horarios.csv';
-
-
-// const NEIGHBORHOODS_CSV_URL = 'Bairros.csv';
-
-
-// const COUPONS_CSV_URL = 'Cupons.csv';
 
 
 // ====================================================================
@@ -141,7 +126,7 @@ const PRELOADER_LOGO_URL = 'https://drive.google.com/file/d/1B-wxRTKIX8vIrZDZLqM
  * const PRELOADER_COLOR = '#2ecc71'; // Verde
  * const PRELOADER_COLOR = '#9b59b6'; // Roxo 
  */
-const PRELOADER_COLOR = '#2e592c'; // Cor principal do preloader
+const PRELOADER_COLOR = '#2E592C'; // Cor principal do preloader
 
 
 
