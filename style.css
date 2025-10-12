@@ -6,7 +6,8 @@
 #footer-company-name {
     font-family: "Playfair Display", "cinzel" !important;
     font-size: 28px !important;
-    background-color: white !important;
+    color: white !important;
+/*    background-color: white !important;*/
      
 }
 
