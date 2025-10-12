@@ -3,18 +3,13 @@
     font-size: 32px !important;
 }
 
-#footer-company-name {
+#text-2x1 {
     color: aliceblue !important;
     font-family: "Playfair Display", "cinzel" !important;
     font-size: 28px !important;
 }
 
-.playfair-display {
-    color:#2E592C !important;
-    background-color: aliceblue !important;
-}
-
-#source-serif-4{
+#source-serif-4 {
     color: unset !important;
 }
 
