@@ -9,7 +9,12 @@
     font-size: 28px !important;
 }
 
-.source-serif-4{
+#playfair-display {
+    color:#2E592C !important;
+    background-color: aliceblue !important;
+}
+
+#source-serif-4{
     color: unset !important;
 }
 
