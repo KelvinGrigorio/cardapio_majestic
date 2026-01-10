@@ -7,7 +7,7 @@
     font-family: "Playfair Display", "cinzel" !important;
     font-size: 28px !important;
     color: white !important;
-/*    background-color: white !important;*/
+    /*    background-color: white !important;*/
 }
 
 #source-serif-4 {
@@ -45,6 +45,10 @@
 /*.text-gray-600 {
     color: aliceblue !important;
 }*/
+
+.text-sm {
+    color: aliceblue !important;
+}
 
 .p-1 {
     color: aliceblue !important;
