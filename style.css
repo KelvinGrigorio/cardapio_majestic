@@ -46,7 +46,7 @@
     color: aliceblue !important;
 }*/
 
-.text-sm {
+.text-gray-600.line-clamp--2 {
     color: aliceblue !important;
 }
 
