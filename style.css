@@ -42,13 +42,12 @@
 
 }*/
 
-/*.text-gray-600 {
+.text-gray-600 {
     color: aliceblue !important;
-}*/
-
-.text-gray-600.line-clamp-2 {
-    color: aliceblue !important;
+    font-weight: bold !important;
 }
+
+
 
 .p-1 {
     color: aliceblue !important;
