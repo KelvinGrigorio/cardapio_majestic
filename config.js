@@ -113,7 +113,7 @@ const TIMEZONE = 'America/Sao_Paulo';
  * const PRELOADER_LOGO_URL = 'https://dropbox.com/s/abc/logo.png?dl=0';
  * const PRELOADER_LOGO_URL = ''; // Sem logo
  */
-const PRELOADER_LOGO_URL = 'https://drive.google.com/file/d/1B-wxRTKIX8vIrZDZLqMSKlNy4vfaWSzw/view?usp=sharing'; // Adicione a URL do seu logo aqui
+const PRELOADER_LOGO_URL = 'https://drive.google.com/file/d/1p6FVhvEWswMkyv-oCkpaWPnzWdU5jnVF/view?usp=sharing'; // Adicione a URL do seu logo aqui
 
 /**
  * COR DO PRELOADER:
