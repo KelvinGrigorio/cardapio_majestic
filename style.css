@@ -30,7 +30,7 @@
     font-size: 25px !important;
     color: aliceblue !important;
     background-color: #2E592C !important;
-    padding: 2px 2px;
+    padding: 2px 7px;
 }
 
 .category-item {
@@ -63,6 +63,10 @@
 
 .w-6 {
     color: aliceblue !important;
+}
+
+#hours-content {
+    text-decoration-color: aliceblue !important;
 }
 
 ;
