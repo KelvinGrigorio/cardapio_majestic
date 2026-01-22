@@ -1,6 +1,6 @@
 /**
  * ====================================================================
- * CONFIGURAÇÃO DO CARDÁPIO SHEETS - V4.0.6 - 28/09/2025 - 22h00
+ * CONFIGURAÇÃO DO CARDÁPIO SHEETS - V4.0.8 - 11/01/2026 - 20h34
  * ====================================================================
  * 
  * Este arquivo contém todas as configurações principais do sistema,
@@ -24,22 +24,22 @@
 //---LINKS DE DEMONSTRAÇÃO ABAIXO: TROQUE PELO SEUS LINKS
 
 // URL of the spreadsheet with menu items (tab: Items)
-const MENU_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSspyfIKlBhjqicB-DkRg4OZL0HsPSJ7wYEeoZ4PTerzDAP4U-O42uiiKZfEQA1l5KAcoN6Qsof/pub?gid=1132427241&single=true&output=csv';
+const MENU_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTpu7t1er3u1QfQirl3g13An-6PHLaEHl1IH2SoM_0Pzt-sjezScS5_piBVGIhliJu8_46FP-cbg-T5/pub?gid=1132427241&single=true&output=csv';
 
 // URL of the spreadsheet with menu categories (tab: Categories)
-const CATEGORIES_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSspyfIKlBhjqicB-DkRg4OZL0HsPSJ7wYEeoZ4PTerzDAP4U-O42uiiKZfEQA1l5KAcoN6Qsof/pub?gid=271394769&single=true&output=csv';
+const CATEGORIES_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTpu7t1er3u1QfQirl3g13An-6PHLaEHl1IH2SoM_0Pzt-sjezScS5_piBVGIhliJu8_46FP-cbg-T5/pub?gid=271394769&single=true&output=csv';
 
 // URL of the spreadsheet with general settings (tab: Config)
-const CONFIG_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSspyfIKlBhjqicB-DkRg4OZL0HsPSJ7wYEeoZ4PTerzDAP4U-O42uiiKZfEQA1l5KAcoN6Qsof/pub?gid=0&single=true&output=csv';
+const CONFIG_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTpu7t1er3u1QfQirl3g13An-6PHLaEHl1IH2SoM_0Pzt-sjezScS5_piBVGIhliJu8_46FP-cbg-T5/pub?gid=0&single=true&output=csv';
 
 // URL of the spreadsheet with operating hours (tab: Hours)
-const HOURS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSspyfIKlBhjqicB-DkRg4OZL0HsPSJ7wYEeoZ4PTerzDAP4U-O42uiiKZfEQA1l5KAcoN6Qsof/pub?gid=1842804489&single=true&output=csv';
+const HOURS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTpu7t1er3u1QfQirl3g13An-6PHLaEHl1IH2SoM_0Pzt-sjezScS5_piBVGIhliJu8_46FP-cbg-T5/pub?gid=1842804489&single=true&output=csv';
 
 // URL of the spreadsheet with neighborhoods and delivery fees (tab: Bairros) **OPCIONAL**
-const NEIGHBORHOODS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSspyfIKlBhjqicB-DkRg4OZL0HsPSJ7wYEeoZ4PTerzDAP4U-O42uiiKZfEQA1l5KAcoN6Qsof/pub?gid=1634629476&single=true&output=csv';
+const NEIGHBORHOODS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTpu7t1er3u1QfQirl3g13An-6PHLaEHl1IH2SoM_0Pzt-sjezScS5_piBVGIhliJu8_46FP-cbg-T5/pub?gid=1634629476&single=true&output=csv';
 
 // URL da planilha de cupons de desconto  **OPCIONAL**
-const COUPONS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRFYLSspyfIKlBhjqicB-DkRg4OZL0HsPSJ7wYEeoZ4PTerzDAP4U-O42uiiKZfEQA1l5KAcoN6Qsof/pub?gid=1144201431&single=true&output=csv';
+const COUPONS_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTpu7t1er3u1QfQirl3g13An-6PHLaEHl1IH2SoM_0Pzt-sjezScS5_piBVGIhliJu8_46FP-cbg-T5/pub?gid=1144201431&single=true&output=csv';
 
 
 
@@ -113,7 +113,7 @@ const TIMEZONE = 'America/Sao_Paulo';
  * const PRELOADER_LOGO_URL = 'https://dropbox.com/s/abc/logo.png?dl=0';
  * const PRELOADER_LOGO_URL = ''; // Sem logo
  */
-const PRELOADER_LOGO_URL = 'https://drive.google.com/file/d/1p6FVhvEWswMkyv-oCkpaWPnzWdU5jnVF/view?usp=sharing'; // Adicione a URL do seu logo aqui
+const PRELOADER_LOGO_URL = 'https://drive.google.com/thumbnail?id=17vfpzTFxxky9-DotLwYsZ6fGTIckHNPf&sz=w300'; // Adicione a URL do seu logo aqui
 
 /**
  * COR DO PRELOADER:
@@ -126,7 +126,7 @@ const PRELOADER_LOGO_URL = 'https://drive.google.com/file/d/1p6FVhvEWswMkyv-oCkp
  * const PRELOADER_COLOR = '#2ecc71'; // Verde
  * const PRELOADER_COLOR = '#9b59b6'; // Roxo 
  */
-const PRELOADER_COLOR = '#2E592C'; // Cor principal do preloader
+const PRELOADER_COLOR = '#b56a19'; // Cor principal do preloader
 
 
 
@@ -167,7 +167,7 @@ const TRADUCAO = true;
 const LANGS = ['pt', 'en', 'es', 'fr'];
 
 // Mapeamento de bandeiras (opcional - se não definido, usa bandeira padrão)
-const BANDEIRAS = {
+const BANDEIRAS = {   
     "pt": "brazil",      // 🇧🇷 Português → Brasil
     "en": "usa",         // 🇺🇸 Inglês → EUA
     "es": "",       // 🇪🇸 Espanhol → Espanha
@@ -228,7 +228,7 @@ const LOG_LEVEL = 'debug'; // Ajuste conforme necessário
 // Função para verificar se deve logar baseado no nível
 function shouldLog(level) {
     if (!DEBUG_MODE) return level === 'error';
-
+    
     const levels = { error: 0, warn: 1, info: 2, debug: 3 };
     return levels[level] <= levels[LOG_LEVEL];
 }
@@ -253,7 +253,7 @@ function errorLog(...args) {
 // Função para logs de performance
 function perfLog(label, fn) {
     if (!shouldLog('debug')) return fn();
-
+    
     console.time(label);
     const result = fn();
     console.timeEnd(label);
@@ -263,7 +263,7 @@ function perfLog(label, fn) {
 // Função para logs de grupos (para organizar logs relacionados)
 function groupLog(label, fn) {
     if (!shouldLog('debug')) return fn();
-
+    
     console.group(label);
     const result = fn();
     console.groupEnd();
