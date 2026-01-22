@@ -1,7 +1,7 @@
 <!--
 //====================================================================\\
 ||                                                                   ||
-||   CARDÁPIO SHEETS - V4.0.6  - 28/09/2025 - 22h00                 ||
+||   CARDÁPIO SHEETS - V4.0.8  - 11/01/2026 - 20h34                 ||
 ||                                                                   ||
 ||    Desenvolvido com ❤️ por Dante Testa                            ||
 ||    www.dantetesta.com.br | WhatsApp: (19) 99802-9156              ||
@@ -32,30 +32,15 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-
     
 
 <!--   INSIRA ABAIXO AS TAGS DE SEO -->
-<title>Cardápio Majestic</title>
+<title>Cardápio Sheets</title>
 
 
 <!--   INSIRA ACIMA AS TAGS DE SEO -->
@@ -191,6 +176,142 @@
         }
         
         body { font-family: 'Inter', sans-serif; }
+        
+        /* ===== PREVENIR ZOOM INDESEJADO NO MOBILE ===== */
+        * {
+            touch-action: manipulation;
+        }
+        
+        /* Prevenir zoom em inputs no iOS (font-size >= 16px) */
+        input, select, textarea, button {
+            font-size: 16px !important;
+            touch-action: manipulation;
+        }
+        
+        /* Manter tamanhos menores apenas em telas grandes */
+        @media (min-width: 769px) {
+            input, select, textarea, button {
+                font-size: inherit !important;
+            }
+        }
+        
+        /* Prevenir zoom em double-tap */
+        html {
+            touch-action: manipulation;
+            -ms-touch-action: manipulation;
+        }
+
+        /* ===== ESTILOS DO CARROSSEL DE IMAGENS ===== */
+        #carousel-container {
+            position: relative;
+            width: 100%;
+            height: 256px;
+            overflow: hidden;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        #carousel-container.single-image {
+            cursor: pointer;
+        }
+
+        #carousel-container.multiple-images {
+            cursor: default;
+        }
+
+        #carousel-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        #carousel-image:hover {
+            opacity: 0.9;
+        }
+
+        .carousel-nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            backdrop-filter: blur(4px);
+        }
+
+        .carousel-nav-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        #carousel-prev {
+            left: 12px;
+        }
+
+        #carousel-next {
+            right: 12px;
+        }
+
+        #carousel-indicators {
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        #carousel-indicators button {
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #carousel-indicators button:hover {
+            transform: scale(1.2);
+        }
+
+        /* Animação de transição entre imagens */
+        @keyframes carouselFadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        #carousel-image {
+            animation: carouselFadeIn 0.3s ease;
+        }
+
+        /* Responsivo para mobile */
+        @media (max-width: 768px) {
+            .carousel-nav-btn {
+                width: 36px;
+                height: 36px;
+            }
+            
+            #carousel-prev {
+                left: 8px;
+            }
+            
+            #carousel-next {
+                right: 8px;
+            }
+            
+            #carousel-indicators {
+                bottom: 8px;
+                gap: 6px;
+            }
+        }
         
         .category-nav {
             backdrop-filter: blur(10px);
@@ -805,7 +926,7 @@
             <!-- Main Info -->
             <div class="text-center mb-6">
                 <div class="mb-3">
-                    <h3 id="footer-company-name" class="text-2xl font-bold" style="color: var(--cor-texto); font-weight: 700; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">🍽️ Cardápio Digital</h3>
+                    <h3 id="footer-company-name" class="text-2xl font-bold" style="color: var(--cor-texto) !important; font-weight: 700; text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">🍽️ Cardápio Digital</h3>
                 </div>
                 <p id="footer-address" class="mb-4 text-sm" style="color: var(--cor-texto-secundario) !important; font-weight: 500; opacity: 0.9;">Rua das Flores, 123 • Centro - Campinas/SP</p>
                 
@@ -872,7 +993,7 @@
             
             <!-- Versão do Aplicativo (discreto, abaixo dos ícones sociais) -->
             <div id="footer-app-version" class="text-center mt-2" style="color: var(--cor-texto-secundario) !important; opacity: 0.55; font-size: 0.65rem;">
-                <span>Versão V4.0.6</span>
+                <span>Versão V4.0.8</span>
                 
                 <!-- <a href="#" onclick="openHelpModal(); return false;" title="Abrir atalhos (F1)" style="color: inherit; text-decoration: none;"
                    onmouseover="this.style.color='var(--cor-primaria)'; this.style.textDecoration='underline'"
@@ -1306,8 +1427,8 @@
             <div class="rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto" style="background-color: var(--cor-fundo) !important;">
                 <div class="p-4">
                     <div class="flex justify-between items-center mb-3">
-                        <h2 class="text-lg font-bold" style="color: aliceblue !important;">Horários de Funcionamento</h2>
-                        <button onclick="closeHoursModal()" style="color: var(--cor-texto) ;" onmouseover="this.style.color='var(--cor-texto)'" onmouseout="this.style.color='var(--cor-texto-secundario)'">
+                        <h2 class="text-lg font-bold" style="color: var(--cor-texto) !important;">Horários de Funcionamento</h2>
+                        <button onclick="closeHoursModal()" style="color: var(--cor-texto) !important;" onmouseover="this.style.color='var(--cor-texto)'" onmouseout="this.style.color='var(--cor-texto-secundario)'">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                             </svg>
@@ -1552,7 +1673,7 @@
 
     <script>
         // Global variables for menu data
-        const APP_VERSION = '4.0.6';
+        const APP_VERSION = '4.0.8';
         let menuData = {};
         let categoriesData = [];
         let hoursData = [];
@@ -2630,7 +2751,7 @@
                         sku: item.SKU,
                         descricao: item.descricao,
                         preco: item.preco, // Manter como string para suportar preços múltiplos
-                        imagem: processImageUrl(item.foto_url),
+                        imagem: item.foto_url || '',
                         disponivel: true,
                         classificacaoAdicional: item.classificacao_adicional,
                         observacoes: item.observacoes
@@ -3466,6 +3587,238 @@
             return "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='80' viewBox='0 0 120 80'%3E%3Crect width='120' height='80' fill='%23f8f9fa'/%3E%3Ctext x='60' y='45' text-anchor='middle' fill='%23adb5bd' font-family='Arial' font-size='12'%3E🍽️%3C/text%3E%3C/svg%3E";
         }
 
+        // Process multiple images from comma-separated URLs
+        function processMultipleImages(imageString) {
+            if (typeof debugLog === 'function') {
+                debugLog('🖼️ Processando múltiplas imagens. String original:', imageString);
+            }
+            
+            if (!imageString || imageString.trim() === '') {
+                if (typeof debugLog === 'function') {
+                    debugLog('❌ String de imagens vazia, usando placeholder');
+                }
+                return [getPlaceholderImage()];
+            }
+            
+            // Limpar a string e separar por vírgula
+            // Também tenta separar por " , " (vírgula com espaços) ou apenas ","
+            let cleanString = imageString.trim();
+            
+            // Dividir por vírgula, removendo espaços extras
+            let urls = cleanString.split(/\s*,\s*/).filter(url => url.length > 0);
+            
+            if (typeof debugLog === 'function') {
+                debugLog('📋 URLs separadas (após split):', urls.length);
+                urls.forEach((url, i) => debugLog(`  [${i}]: ${url.substring(0, 80)}...`));
+            }
+            
+            if (urls.length === 0) {
+                if (typeof debugLog === 'function') {
+                    debugLog('❌ Nenhuma URL válida encontrada, usando placeholder');
+                }
+                return [getPlaceholderImage()];
+            }
+            
+            // Processar cada URL individualmente
+            const processedImages = urls.map((url, index) => {
+                const processed = processImageUrl(url);
+                if (typeof debugLog === 'function') {
+                    debugLog(`🔄 Imagem ${index + 1}/${urls.length}: ${processed.substring(0, 60)}...`);
+                }
+                return processed;
+            });
+            
+            if (typeof debugLog === 'function') {
+                debugLog('✅ Total de imagens processadas:', processedImages.length);
+            }
+            return processedImages;
+        }
+
+        // Get first image as cover for product list
+        function getCoverImage(imageString) {
+            const images = processMultipleImages(imageString);
+            return images[0];
+        }
+
+        // Carousel functionality
+        let currentCarouselIndex = 0;
+        let carouselImages = [];
+
+        function initCarousel(images) {
+            carouselImages = images;
+            currentCarouselIndex = 0;
+            updateCarouselDisplay();
+        }
+
+        function updateCarouselDisplay() {
+            const carouselContainer = document.getElementById('carousel-container');
+            const carouselImage = document.getElementById('carousel-image');
+            const carouselIndicators = document.getElementById('carousel-indicators');
+            const prevBtn = document.getElementById('carousel-prev');
+            const nextBtn = document.getElementById('carousel-next');
+            
+            if (typeof debugLog === 'function') {
+                debugLog('🎠 Atualizando display do carrossel');
+                debugLog('📸 carouselImages.length:', carouselImages.length);
+                debugLog('🎯 currentCarouselIndex:', currentCarouselIndex);
+                debugLog('🏷️ carouselContainer:', !!carouselContainer);
+                debugLog('🖼️ carouselImage:', !!carouselImage);
+            }
+            
+            if (!carouselContainer || !carouselImage) {
+                if (typeof debugLog === 'function') {
+                    debugLog('❌ Elementos do carrossel não encontrados');
+                }
+                return;
+            }
+            
+            if (carouselImages.length > 1) {
+                if (typeof debugLog === 'function') {
+                    debugLog('✅ Modo carrossel ativado - múltiplas imagens');
+                }
+                
+                // Show carousel controls
+                carouselImage.src = carouselImages[currentCarouselIndex];
+                carouselImage.onclick = () => openLightbox(carouselImages[currentCarouselIndex], currentProduct?.nome || '');
+                
+                // Update indicators
+                if (carouselIndicators) {
+                    carouselIndicators.innerHTML = carouselImages.map((_, index) => 
+                        `<button class="w-2 h-2 rounded-full transition-all ${index === currentCarouselIndex ? 'bg-white' : 'bg-white bg-opacity-50'}" onclick="goToCarouselSlide(${index})"></button>`
+                    ).join('');
+                    if (typeof debugLog === 'function') {
+                        debugLog('🔵 Indicadores criados:', carouselImages.length);
+                    }
+                }
+                
+                // Show/hide navigation buttons
+                if (prevBtn && nextBtn) {
+                    prevBtn.style.display = 'flex';
+                    nextBtn.style.display = 'flex';
+                    if (typeof debugLog === 'function') {
+                        debugLog('⬅️➡️ Botões de navegação mostrados');
+                    }
+                }
+                
+                carouselContainer.classList.remove('single-image');
+                carouselContainer.classList.add('multiple-images');
+            } else {
+                if (typeof debugLog === 'function') {
+                    debugLog('📸 Modo imagem única - ocultando controles');
+                }
+                
+                // Single image - hide carousel controls
+                carouselImage.src = carouselImages[0];
+                carouselImage.onclick = () => openLightbox(carouselImages[0], currentProduct?.nome || '');
+                
+                if (carouselIndicators) {
+                    carouselIndicators.innerHTML = '';
+                }
+                
+                if (prevBtn && nextBtn) {
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                }
+                
+                carouselContainer.classList.remove('multiple-images');
+                carouselContainer.classList.add('single-image');
+            }
+        }
+
+        function nextCarouselSlide() {
+            if (carouselImages.length <= 1) return;
+            currentCarouselIndex = (currentCarouselIndex + 1) % carouselImages.length;
+            updateCarouselDisplay();
+        }
+
+        function prevCarouselSlide() {
+            if (carouselImages.length <= 1) return;
+            currentCarouselIndex = (currentCarouselIndex - 1 + carouselImages.length) % carouselImages.length;
+            updateCarouselDisplay();
+        }
+
+        function goToCarouselSlide(index) {
+            if (index >= 0 && index < carouselImages.length) {
+                currentCarouselIndex = index;
+                updateCarouselDisplay();
+            }
+        }
+
+        // Touch/swipe support for carousel
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        function handleTouchStart(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }
+
+        function handleTouchEnd(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipeGesture();
+        }
+
+        function handleSwipeGesture() {
+            if (carouselImages.length <= 1) return;
+            
+            const swipeThreshold = 50; // minimum distance for swipe
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next image
+                    nextCarouselSlide();
+                } else {
+                    // Swipe right - previous image
+                    prevCarouselSlide();
+                }
+            }
+        }
+
+        // Add touch event listeners to carousel
+        function setupCarouselTouchEvents() {
+            const carouselContainer = document.getElementById('carousel-container');
+            if (carouselContainer) {
+                carouselContainer.addEventListener('touchstart', handleTouchStart, { passive: true });
+                carouselContainer.addEventListener('touchend', handleTouchEnd, { passive: true });
+            }
+        }
+
+        // Função de teste para debug do carrossel
+        function testCarousel() {
+            if (typeof debugLog === 'function') {
+                debugLog('🧪 Iniciando teste do carrossel...');
+            }
+            
+            // Testar com múltiplas imagens de exemplo
+            const testImages = [
+                'https://picsum.photos/400/300?random=1',
+                'https://picsum.photos/400/300?random=2',
+                'https://picsum.photos/400/300?random=3'
+            ];
+            
+            if (typeof debugLog === 'function') {
+                debugLog('🖼️ Imagens de teste:', testImages);
+            }
+            
+            // Se houver um produto atual, atualizar com imagens de teste
+            if (currentProduct) {
+                currentProduct.imagem = testImages.join(',');
+                const productImages = processMultipleImages(currentProduct.imagem);
+                initCarousel(productImages);
+                
+                if (typeof debugLog === 'function') {
+                    debugLog('🎠 Carrossel de teste inicializado com', productImages.length, 'imagens');
+                }
+            } else {
+                if (typeof debugLog === 'function') {
+                    debugLog('❌ Nenhum produto atual para testar');
+                }
+            }
+        }
+
+        // Adicionar função global para teste
+        window.testCarousel = testCarousel;
+
         // Render category navigation
         function renderCategoryNavigation() {
             const container = document.getElementById('category-nav');
@@ -3661,7 +4014,7 @@
                                 <div class="food-card bg-white rounded-lg p-4 shadow-sm border border-gray-100 relative cursor-pointer hover:shadow-md transition-shadow duration-300" onclick="openProductModal(${item.id})">
                                     <div class="flex items-start space-x-4">
                                         <div class="flex-shrink-0">
-                                            <img src="${processImageUrl(item.imagem)}" alt="${item.nome}" class="w-20 h-20 object-cover rounded-lg lazy-image" loading="lazy" onerror="errorLog('Erro ao carregar imagem do item:', this.src, 'Item:', '${item.nome}'); this.src='${getPlaceholderImage()}'" onload="this.classList.add('loaded'); debugLog('Imagem do item carregada:', this.src)" style="background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite;">
+                                            <img src="${getCoverImage(item.imagem)}" alt="${item.nome}" class="w-20 h-20 object-cover rounded-lg lazy-image" loading="lazy" onerror="errorLog('Erro ao carregar imagem do item:', this.src, 'Item:', '${item.nome}'); this.src='${getPlaceholderImage()}'" onload="this.classList.add('loaded'); debugLog('Imagem do item carregada:', this.src)" style="background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite;">
                                             <div class="text-xs text-gray-500 text-center mt-1 font-mono">${item.sku}</div>
                                         </div>
                                         <div class="flex-1 min-w-0">
@@ -3865,12 +4218,27 @@
             }
 
             content.innerHTML = `
-                <div class="relative">
-                    <img src="${processImageUrl(product.imagem)}" alt="${product.nome}" class="w-full h-64 object-cover rounded-t-2xl sm:rounded-t-2xl cursor-pointer hover:opacity-90 transition-opacity lazy-image" loading="lazy" onerror="errorLog('Erro ao carregar imagem do modal:', this.src, 'Produto:', '${product.nome}'); this.src='${getPlaceholderImage()}'" onload="this.classList.add('loaded'); debugLog('Imagem do modal carregada:', this.src)" onclick="openLightbox('${processImageUrl(product.imagem)}', '${product.nome}')" style="background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite;">
+                <div id="carousel-container" class="single-image">
+                    <img id="carousel-image" src="${getCoverImage(product.imagem)}" alt="${product.nome}" class="w-full h-64 object-cover lazy-image" loading="lazy" onerror="errorLog('Erro ao carregar imagem do modal:', this.src, 'Produto:', '${product.nome}'); this.src='${getPlaceholderImage()}'" onload="this.classList.add('loaded'); debugLog('Imagem do modal carregada:', this.src)">
+                    
+                    <!-- Navigation buttons -->
+                    <button id="carousel-prev" class="carousel-nav-btn" onclick="prevCarouselSlide()" style="display: none;">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <button id="carousel-next" class="carousel-nav-btn" onclick="nextCarouselSlide()" style="display: none;">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    
+                    <!-- Indicators -->
+                    <div id="carousel-indicators"></div>
+                    
                     <div class="absolute bottom-2 left-2 bg-black bg-opacity-70 text-white px-2 py-1 rounded text-xs font-mono">
                         ${product.sku}
                     </div>
-
                 </div>
                 <div class="px-6 pt-6 pb-4">
                     <h3 class="text-xl font-bold text-gray-900 mb-2">${product.nome}</h3>
@@ -3880,7 +4248,7 @@
                             <svg class="w-4 h-4 mt-0.5 flex-shrink-0" style="color: var(--cor-primaria);" fill="currentColor" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
                             </svg>
-                            <p class="text-sm" style="color: var(--cor-texto); line-height: 1.4;">${product.observacoes}</p>
+                            <p class="text-sm" style="color: var(--cor-texto); line-height: 1.6;">${product.observacoes.replace(/\n/g, '<br>')}</p>
                         </div>
                     ` : ''}
                     <div class="flex items-center justify-between mb-6">
@@ -3980,6 +4348,37 @@
             `;
 
             modal.classList.remove('hidden');
+            
+            // Inicializar carrossel de imagens (com pequeno delay para garantir DOM pronto)
+            setTimeout(() => {
+                console.log('========== DEBUG CARROSSEL ==========');
+                console.log('📦 Produto:', product.nome);
+                console.log('🖼️ String ORIGINAL da imagem:', product.imagem);
+                console.log('🔍 Tipo:', typeof product.imagem);
+                console.log('📏 Tamanho:', product.imagem ? product.imagem.length : 0);
+                
+                const productImages = processMultipleImages(product.imagem);
+                
+                console.log('📸 Array processado:', productImages);
+                console.log('📊 Total de imagens:', productImages.length);
+                
+                initCarousel(productImages);
+                setupCarouselTouchEvents();
+                
+                // Verificar elementos do DOM
+                const prevBtn = document.getElementById('carousel-prev');
+                const nextBtn = document.getElementById('carousel-next');
+                const indicators = document.getElementById('carousel-indicators');
+                
+                console.log('🔘 Botão Prev existe:', !!prevBtn);
+                console.log('🔘 Botão Next existe:', !!nextBtn);
+                console.log('🔘 Indicadores existe:', !!indicators);
+                
+                if (prevBtn) console.log('⬅️ Prev display:', prevBtn.style.display);
+                if (nextBtn) console.log('➡️ Next display:', nextBtn.style.display);
+                
+                console.log('=====================================');
+            }, 100);
             
             // Reset scroll do modal para sempre começar do topo
             const modalScrollContainer = modal.querySelector('.overflow-y-auto');
@@ -4615,7 +5014,7 @@
                         <div class="flex items-start space-x-3">
                             <!-- Imagem -->
                             <div class="flex-shrink-0">
-                                <img src="${processImageUrl(item.imagem)}" alt="${item.nome}" class="w-16 h-16 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity" onerror="this.src='${getPlaceholderImage()}'" onclick="openImageLightbox('${processImageUrl(item.imagem)}', '${item.nome}')">
+                                <img src="${getCoverImage(item.imagem)}" alt="${item.nome}" class="w-16 h-16 object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity" onerror="this.src='${getPlaceholderImage()}'" onclick="openImageLightbox('${getCoverImage(item.imagem)}', '${item.nome}')">
                             </div>
                             
                             <!-- Informações do produto -->
@@ -5408,7 +5807,7 @@
             itemInfoDiv.innerHTML = `
                 <div class="flex items-center space-x-3">
                     <div class="relative">
-                        <img src="${processImageUrl(item.imagem)}" alt="${item.nome}" class="w-12 h-10 object-cover rounded" onerror="this.src='${getPlaceholderImage()}'">
+                        <img src="${getCoverImage(item.imagem)}" alt="${item.nome}" class="w-12 h-10 object-cover rounded" onerror="this.src='${getPlaceholderImage()}'">
                     </div>
                     <div class="flex-1">
                         <div class="text-xs text-gray-400 font-mono" style="font-size: 10px; margin-bottom: 2px;">${item.sku}</div>
