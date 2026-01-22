@@ -65,4 +65,8 @@
     color: aliceblue !important;
 }
 
+:root {
+    --cor-preta: #000000 !important;
+}
+
 ;
