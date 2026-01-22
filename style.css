@@ -42,10 +42,10 @@
 
 }*/
 
-.text-gray-600 {
+/*.text-gray-600 {
     color:black !important;
     font-weight: bold !important;
-}
+}*/
 
 
 
@@ -63,10 +63,6 @@
 
 .w-6 {
     color: aliceblue !important;
-}
-
-#hours-content {
-    text-decoration-color: aliceblue !important;
 }
 
 ;
